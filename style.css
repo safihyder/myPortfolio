@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jost:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jost:wght@500&family=Permanent+Marker&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y;
+}
+
+.container {
+    background-color: #8da1a1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(141 161 161);
+    box-shadow: 1px 2px 12px 4px black;
+    font-family: 'Jost', sans-serif;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+}
+
+nav div {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #554838;
+}
+
+nav div img {
+    height: 23px;
+    height: 40px;
+}
+
+.list {
+    display: flex;
+}
+
+.list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #554838;
+}
+
+.list li a:hover {
+    color: #fff;
+
+}
+
+.btn_line {
+    height: 2px;
+    border: 5px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.5s ease-in;
+}
+
+.btn_line_expand {
+    width: 100%;
+}
+
+.main {
+    background-color: #3a3838;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.infoContainer {
+    background-color: #647474;
+    height: 86vh;
+    width: 85vw;
+    margin: 40px auto;
+    box-shadow: 17px 14px 20px 0px #554838;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.hello {
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+}
+
+.about {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+
+.about span {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: bold;
+}
+p span{
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.green {
+    color:#15cb8c;;
+}
+
+.white {
+    color: white;
+}
+
+.name {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.button {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 18rem;
+}
+
+button {
+    padding: 15px 21px;
+    border-radius: 40px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #15cb8c;
+}
+
+button:hover {
+    background-color: white;
+    color: #15cb8c;
+}
+
+p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.devimg {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.devimg img {
+    height: 60vh;
+    background: url(./images/back.png) center center /600px 600px no-repeat;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+hr {
+    border: 0;
+    background-color: #647474;
+    height: 1px;
+    margin: 60px 100px 34px 100px;
+}
+h1 {
+    color: #554838;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.aboutMe {
+    /* font-family: 'Indie Flower', cursive; */
+    background-color: #647474;
+    height: fit-content;
+    width: 85vw;
+    margin: 40px auto;
+    box-shadow: 17px 14px 20px 0px #554838;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe 
+h2 {
+    color: #554838;
+    font-family: cursive;
+    margin-top: 60px;
+}
+
+
+
+    .aboutMe p {
+        font-size: 18px;
+        color: white;
+        width: 80%;
+        text-align: center;
+        letter-spacing: 3px;
+        word-spacing: 25px;
+    }
+
+.skills {
+    background-color: white;
+    width: 70vw;
+    margin: 36px;
+    box-shadow: 5px 5px 5px #595252;
+
+}
+
+.box {
+    display: flex;
+    height: 70px;
+}
+
+.skillbox {
+    display: flex;
+    padding: 15px;
+    width: 26.5rem;
+    border-right: 1px solid black;
+    align-items: center;
+}
+
+@keyframes html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes node {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes express {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes mongo {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes php {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.aboutMe .skill_html {
+    width: 80%;
+    height: 25px;
+    background-color: red;
+    animation: html 2s;
+}
+
+.aboutMe .skill_css {
+    width: 70%;
+    height: 25px;
+    background-color: rgb(35, 18, 221);
+    animation: css 2s;
+}
+
+.aboutMe .skill_js {
+    width: 60%;
+    height: 25px;
+    background-color: yellow;
+    animation: js 2s;
+}
+
+.aboutMe .skill_react {
+    width: 50%;
+    height: 25px;
+    background-color: #02d8fe;
+    animation: react 2s;
+}
+
+.aboutMe .skill_nodejs {
+    width: 40%;
+    height: 25px;
+    background-color: #559f45;
+    animation: node 2s;
+}
+
+.aboutMe .skill_express {
+    width: 40%;
+    height: 25px;
+    background-color: #828282;
+    animation: express 2s;
+}
+
+.aboutMe .skill_mongo {
+    width: 30%;
+    height: 25px;
+    background-color: #6fb15c;
+    animation: mongo 2s;
+}
+
+.aboutMe .skill_php {
+    width: 80%;
+    height: 25px;
+    background-color: #2e568e;
+    animation: php 2s;
+}
+
+.php {
+    height: 12px !important;
+}
+
+
+.skillbox img {
+    height: 23px;
+}
+
+footer {
+    background: black;
+    color: #554838;
+    height: 40px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Media Querries */
+@media screen and (max-width: 740px) {
+    nav{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 85px;
+    }
+    .list li{
+        margin: 0 10px;
+    }
+  .infoContainer{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+  .devimg img {
+    height: 45vh;
+  }
+  .devinfo{
+    align-items: center;
+    text-align: center;
+  }
+.hello{
+    font-size: 20px;
+}
+  .about{
+    font-size: 15px;
+    margin: 0;
+  }
+  .name{
+    font-size: 30px;
+  }
+.aboutMe h2{
+    margin-top: 20px;
+}
+.aboutMe p{
+    word-spacing: 20px;
+}
+  .box{
+    display: flex;
+    flex-direction: column;
+    height: unset;
+  }
+  .skillbox{
+    width: 100%;
+    border-bottom: 0;
+  }
+}
