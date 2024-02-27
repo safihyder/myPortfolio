@@ -119,13 +119,15 @@ nav div img {
     font-size: 30px;
     font-weight: bold;
 }
-p span{
+
+p span {
     font-family: 'Indie Flower', cursive;
 
 }
 
 .green {
-    color:#15cb8c;;
+    color: #15cb8c;
+    ;
 }
 
 .white {
@@ -174,7 +176,6 @@ p {
 .devimg img {
     height: 60vh;
     background: url(./images/back.png) center center /600px 600px no-repeat;
-    border-radius: 50%;
     margin-right: 15px;
 }
 
@@ -184,12 +185,14 @@ hr {
     height: 1px;
     margin: 60px 100px 34px 100px;
 }
+
 h1 {
     color: #554838;
     text-align: center;
     letter-spacing: 10px;
 }
 
+/* aboutMe..................... */
 .aboutMe {
     /* font-family: 'Indie Flower', cursive; */
     background-color: #647474;
@@ -204,8 +207,7 @@ h1 {
     justify-content: center;
 }
 
-.aboutMe 
-h2 {
+.aboutMe h2 {
     color: #554838;
     font-family: cursive;
     margin-top: 60px;
@@ -213,14 +215,14 @@ h2 {
 
 
 
-    .aboutMe p {
-        font-size: 18px;
-        color: white;
-        width: 80%;
-        text-align: center;
-        letter-spacing: 3px;
-        word-spacing: 25px;
-    }
+.aboutMe p {
+    font-size: 18px;
+    color: white;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 25px;
+}
 
 .skills {
     background-color: white;
@@ -323,6 +325,11 @@ h2 {
     }
 }
 
+.skillbox div {
+    display: flex;
+    align-items: center;
+}
+
 .aboutMe .skill_html {
     width: 80%;
     height: 25px;
@@ -388,6 +395,77 @@ h2 {
     height: 23px;
 }
 
+/* my projects */
+.projects {
+    background-color: #647474;
+    height: fit-content;
+    width: 85vw;
+    margin: 40px auto;
+    box-shadow: 17px 14px 20px 0px #554838;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.projItem {
+    height: 250px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.projItem a {
+    color: #554838;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-decoration: none;
+}
+
+.p1 {
+    background-image: url("./images/p1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.p2 {
+    background-image: url("./images/p2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.p3 {
+    background-image: url("./images/p3.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.p4 {
+    background-image: url("./images/p4.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.p5 {
+    background-image: url("./images/p5.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.p6 {
+    background-image: url("./images/p6.png");
+    background-position: center;
+    background-size: cover;
+}
+
 footer {
     background: black;
     color: #554838;
@@ -399,52 +477,71 @@ footer {
     justify-content: center;
     text-align: center;
 }
+
 /* Media Querries */
 @media screen and (max-width: 740px) {
-    nav{
+    nav {
         flex-direction: column;
         justify-content: space-around;
         height: 85px;
     }
-    .list li{
+
+    .list li {
         margin: 0 8px;
     }
-  .infoContainer{
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    flex-direction: column-reverse;
-  }
-  .devimg img {
-    height: 45vh;
-  }
-  .devinfo{
-    align-items: center;
-    text-align: center;
-  }
-.hello{
-    font-size: 20px;
+
+    .infoContainer {
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+
+    .devimg img {
+        height: 45vh;
+    }
+
+    .devinfo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hello {
+        font-size: 20px;
+    }
+
+    .about {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .aboutMe h2 {
+        margin-top: 20px;
+    }
+
+    .aboutMe p {
+        word-spacing: 20px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+    }
+
+    .skillbox {
+        width: 100%;
+        border-bottom: 0;
+    }
 }
-  .about{
-    font-size: 15px;
-    margin: 0;
-  }
-  .name{
-    font-size: 30px;
-  }
-.aboutMe h2{
-    margin-top: 20px;
+
+@media screen and (max-width: 600px) {
+    .projects {
+        grid-template-columns: auto
+    }
 }
-.aboutMe p{
-    word-spacing: 20px;
-}
-  .box{
-    display: flex;
-    flex-direction: column;
-    height: unset;
-  }
-  .skillbox{
-    width: 100%;
-    border-bottom: 0;
-  }
-}
+
