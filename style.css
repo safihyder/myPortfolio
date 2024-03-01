@@ -181,7 +181,6 @@ p {
 .devimg img {
     height: 60vh;
     background: url(./images/back.png) center center /600px 600px no-repeat;
-    margin-right: 15px;
 }
 
 hr {
