@@ -53,6 +53,9 @@ nav div img {
     margin: 0 20px;
     font-size: 18px;
 }
+.palestine{
+    height: 23px;
+}
 
 .list li a {
     text-decoration: none;
@@ -85,7 +88,7 @@ nav div img {
 
 .infoContainer {
     background-color: #647474;
-    height: 86vh;
+    min-height: 86vh;
     width: 85vw;
     margin: 40px auto;
     box-shadow: 17px 14px 20px 0px #554838;
@@ -158,8 +161,10 @@ button {
 }
 
 button:hover {
-    background-color: white;
-    color: #15cb8c;
+    color: white;
+    transform: scale(1.07);
+    transition: transform 0.5s ease-in;
+    /* color: #15cb8c; */
 }
 
 p {
@@ -329,62 +334,10 @@ h1 {
     display: flex;
     align-items: center;
 }
-
-.aboutMe .skill_html {
-    width: 80%;
+.skill{
     height: 25px;
-    background-color: red;
-    animation: html 2s;
 }
 
-.aboutMe .skill_css {
-    width: 70%;
-    height: 25px;
-    background-color: rgb(35, 18, 221);
-    animation: css 2s;
-}
-
-.aboutMe .skill_js {
-    width: 60%;
-    height: 25px;
-    background-color: yellow;
-    animation: js 2s;
-}
-
-.aboutMe .skill_react {
-    width: 50%;
-    height: 25px;
-    background-color: #02d8fe;
-    animation: react 2s;
-}
-
-.aboutMe .skill_nodejs {
-    width: 40%;
-    height: 25px;
-    background-color: #559f45;
-    animation: node 2s;
-}
-
-.aboutMe .skill_express {
-    width: 40%;
-    height: 25px;
-    background-color: #828282;
-    animation: express 2s;
-}
-
-.aboutMe .skill_mongo {
-    width: 30%;
-    height: 25px;
-    background-color: #6fb15c;
-    animation: mongo 2s;
-}
-
-.aboutMe .skill_php {
-    width: 80%;
-    height: 25px;
-    background-color: #2e568e;
-    animation: php 2s;
-}
 
 .php {
     height: 12px !important;
@@ -419,6 +372,7 @@ h1 {
     opacity: 0.8;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+
 
 .projItem a {
     color: #554838;
