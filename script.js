@@ -74,6 +74,7 @@ const observer = new IntersectionObserver(function (entries) {
                 background-color: #2e568e;
                 animation: php 2s;
             }
+           
     `;
             document.head.appendChild(style);
         }

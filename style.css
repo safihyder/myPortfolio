@@ -385,7 +385,23 @@ h1 {
     justify-content: center;
     flex-direction: column-reverse;
     text-decoration: none;
-    
+    position: absolute;
+    z-index: 1;
+}
+.projItem p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    margin: 0;
+    font-size: 20px;
+    color: #1e1f1f;
+    font-weight: bold;
+    font-family: math;
+}
+.projItem p:hover{
+    color: white;
 }
 
 
@@ -427,6 +443,79 @@ h1 {
     background-size: cover;
 }
 
+/* Contact */
+.contact{
+    display: flex;
+    margin:40px auto;
+    background-color: #647474;
+    width: 85vw;
+    border-radius: 10px;
+    box-shadow: 17px 14px 20px 0px #554838;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contactinfo{
+    /* padding-top: 50px; */
+    width: 50%;
+}
+.contactinfo h2{
+    color: #554838;
+    font-family: cursive;
+}
+.aboutsocial{
+    list-style: none;
+}
+.aboutsocial li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 80px 0;
+}
+.aboutsocial li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.aboutsocial .circle{
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.line {
+    height: 1px;
+    width: 100px;
+    background-color: white;
+}
+.aboutsocial div img{
+    height: 45px;
+    transition: transform 0.6s ease-in;
+}
+.aboutsocial div img:hover {
+    transform: rotate(360deg);
+}
+
+.verticalline{
+    height: 510px;
+    width: 1px;
+    background-color: white;
+}
+.contactImg{
+    height: 530px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactImg img{
+    height: 300px;
+}
+/* Footer */
 footer {
     background: black;
     color: #554838;
@@ -504,5 +593,35 @@ footer {
     .projects {
         grid-template-columns: auto
     }
+    .verticalline {
+        position: absolute;
+        visibility: hidden;
+    }
+    .contactinfo {
+        padding-top: 0px;
+    }
+    .contactImg{
+        visibility:hidden;
+        position: absolute;
+    }
+    .aboutsocial{
+        margin-bottom: 50px;
+    }
+    .aboutsocial li{
+        flex-direction: column;
+        height: fit-content;
+        margin: 40px 0 80px 0;
+    }
+    .line {
+        height: 25px;
+        width: 1px;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    .contactImg img {
+        height: 200px;
+    }
+}
+
 
