@@ -196,8 +196,8 @@ hr {
 }
 
 h1 {
-    color: #554838;
-    letter-spacing: 10px;
+    color: rgb(10 11 11);
+    letter-spacing: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
