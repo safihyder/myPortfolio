@@ -1,1 +1,1 @@
-https://safihyder.github.io/portfolio2/
+https://safihyder.github.io/myPortfolio/
