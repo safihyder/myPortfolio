@@ -36,27 +36,27 @@
 
             <div class="devinfo">
 
-                <div class="hello">Hi,I am</div>
+                <div class="hello">Hi, I'm</div>
                 <div class="name">Safi Hyder</div>
-                <div class="about">I am a &nbsp;<span id="element" class="green"></span></div>
+                <div class="about">&nbsp;&lt;<span id="element" class="green"></span>/&gt;</div>
 
-                <p><span id="element2" class="white"></span></p>
+                <p ><span style="font-family: monospace;;" id="element2" class="white"></span></p>
                 <div class="button">
-                    <a href="./images/myCV.pdf" download><button>Download CV</button></a>
-                    <a href="https://github.com/safihyder" target="_blank"><button>Visit Github</button></a>
+                    <a  style="text-decoration: none;" href="./images/myCV.pdf" download><button><img style="height: 28px;" src="/images/cv.png" alt="">&nbsp;<span>Resume</span></button></a>
+                    <a style="text-decoration: none;" href="https://github.com/safihyder" target="_blank"><button><img style="height: 28px;" src="/images/github.png" alt="">&nbsp;&nbsp;<span>Github</span></button></a>
                 </div>
             </div>
             <div class="devimg"><img src="./images/portimg.png" alt="Safi Hyder"></div>
         </div>
         <hr>
-        <h1 id="about">About</h1>
+        <h1 id="about"><img style="height: 28px;" src="/images/about.png" alt="">&nbsp;About</h1>
 
         <div class="aboutMe">
 
             <!-- <h1>About me</h1> -->
-            <p>&nbsp;I am an Awaiter who belives in positive change, Lets beautify the world with beautiful thoughts.
-            </p>
-            <h2>My Skills</h2>
+            <!-- <p>&nbsp;You are visiting the profile of a Creative, Innovative, Detail-oriented, Experienced, Versatile, Results-driven, Proficient & Skilled web developer
+            </p> -->
+            <h2 ><img style="height: 28px;" src="/images/skills.gif" alt="">&nbsp;My Skills</h2>
             <div class="skills" id="animateOnVisit">
                 <div class="box">
                     <div class="skillbox"><img src="./images/html.png" alt="">&nbsp;<div class="skill_html skill">
@@ -99,7 +99,7 @@
             </div>
         </div>
         <hr>
-        <h1 id="projects">My Projects</h1>
+        <h1 id="projects"><img style="height: 28px;" src="/images/projects.png" alt="">&nbsp;My Projects</h1>
         <div class="projects">
            <div class="projItem "><a href="https://safihyder.github.io/Try-not_to-laugh-jokes/" class="Item"><img src="./images/p1.png" alt=""><p>Donot laugh Jokes</p></a></div>
             <div class="projItem "><a href="https://safihyder.github.io/Try-not_to-laugh-jokes/" class="Item"><img src="./images/p2.png" alt=""><p>Animated Wave Form</p></a></div>
@@ -109,7 +109,7 @@
             <div class="projItem "><a href="https://safihyder.github.io/hotel-menu/" class="Item"><img src="./images/p6.png" alt=""><p>Hotel Menu</p></a></div>
         </div>
         <hr>
-        <h1 id="contact">Contact me</h1>
+        <h1 id="contact"><img style="height: 28px;" src="/images/chat.png" alt="">&nbsp;Contact me</h1>
         <div class="contact">
             <div class="contactinfo">
                 <ul class="aboutsocial">
@@ -143,11 +143,11 @@
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
             var typed = new Typed('#element', {
-                strings: ['Student', 'Web Developer', 'Web Designer',],
+                strings: ['Student', 'Web Designer', 'Web Developer',],
                 typeSpeed: 50,
             });
             var typed = new Typed('#element2', {
-                strings: ['I am an Awaiter who belives in positive change, Lets beautify the world with beautiful thoughts.'],
+                strings: ['I\'m a Creative, Innovative, Detail-oriented, Experienced,</br>  Proficient ,and Skilled web developer'],
                 typeSpeed: 50,
             });
         </script>

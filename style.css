@@ -114,6 +114,7 @@ nav div img {
 .about {
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
+    color: #15cb8c;
     margin: 12px 0;
 }
 
@@ -153,18 +154,21 @@ p span {
 }
 
 button {
-    padding: 15px 21px;
+    padding: 12px 21px;
     border-radius: 40px 12px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     background-color: #15cb8c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
-    color: white;
-    transform: scale(1.07);
-    transition: transform 0.5s ease-in;
+    background-color: #2abd8a;;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in;
     /* color: #15cb8c; */
 }
 
@@ -193,8 +197,10 @@ hr {
 
 h1 {
     color: #554838;
-    text-align: center;
     letter-spacing: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* aboutMe..................... */
@@ -213,6 +219,9 @@ h1 {
 }
 
 .aboutMe h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #554838;
     font-family: cursive;
     margin-top: 60px;
@@ -472,9 +481,7 @@ h1 {
     transition: transform 0.6s ease-in;
 }
 
-.aboutsocial div img:hover {
-    transform: rotate(360deg);
-}
+
 
 .verticalline {
     height: 510px;
